@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Color picker</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css" />
+
+    <script src="https://unpkg.com/culori"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="button-row">
+        <button type="button" class="btn-class-toggle" data-toggle-class="hgap">Toggle horizontal gap</button>
+        <button type="button" class="btn-class-toggle" data-toggle-class="vgap">Toggle vertical gap</button>
+        <button type="button" class="btn-class-toggle" data-toggle-class="light">Toggle light display</button>
+      </div>
+      <div id="board-1" class="board vgap" style="display: block"></div>
+      <div id="board-2" class="board vgap" style="display: none"></div>
+      <div class="picker"></div>
+      <code class="result">
+        <h2 class="title">Sass:</h2>
+        <div class="code" id="sass-result"></div>
+      </code>
+      <code class="result">
+        <h2 class="title">JSON:</h2>
+        <div class="code" id="json-result"></div>
+      </code>
+      <code class="result">
+        <h2 class="title">Lua:</h2>
+        <div class="code" id="lua-result"></div>
+      </code>
+    </div>
+  </body>
+</html>
