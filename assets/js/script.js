@@ -161,6 +161,8 @@ class Grid {
   static load(board) {
     const buffer = JSON.parse(window.localStorage.getItem("color-grid"));
 
+    if (!buffer) return undefined;
+
     board.replaceChildren();
 
     const g = new Grid(board, buffer.width, buffer.height, buffer.grid);
